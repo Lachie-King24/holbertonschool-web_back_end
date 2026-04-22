@@ -7,7 +7,7 @@ export default class Building {
     }
 
     evacuationWarningMessage() {
-        throw new Error('evacuationWarningMessage() must be implemented by subclasses');
+        throw new Error('Class extending Building must override evacuationWarningMessage');
     }
 
     // Getter
