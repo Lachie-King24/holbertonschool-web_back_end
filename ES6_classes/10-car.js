@@ -26,4 +26,24 @@ export default class Car {
             this._brand = value;
         }
     }
+
+    set motor(value) {
+        if (typeof value !== 'string') {
+            throw new TypeError('Motor must be a string');
+        } else {
+            this._motor = value;
+        }
+    }
+
+    set color(value) {
+        if (typeof value !== 'string') {
+            throw new TypeError('Color must be a string');
+        } else {
+            this._color = value;
+        }
+    }
+
+    cloneCar() {
+        return new Car(this._brand, this._motor, this._color);
+    }
 }
