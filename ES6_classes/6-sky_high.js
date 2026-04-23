@@ -7,7 +7,7 @@ export default class SkyHighBuilding extends Building {
     }
 
     evacuationWarningMessage() {
-        throw new Error('In the event of an emergency, all occupants of the SkyHigh Building should exit via the stairs.');
+        return `Evacuate slowly the ${this._floors} floors`;
     }
 
     // Getter
