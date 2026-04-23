@@ -5,7 +5,7 @@ export default class Airport {
     }
 
         toString() {
-            return `${this._name} (${this._code})`;
+            return `Airport [${this._code}]`;
         }
 
     // Getters
