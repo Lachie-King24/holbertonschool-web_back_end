@@ -1,7 +1,12 @@
 export default function cleanSet(set, startString) {
     if (!startString) {
         return '';
-    } else {
+    }
+    elif (typeof startString !== 'string') {
+        return '';
+    } 
+    
+    else {
         let result = '';
         for (let element of set) {
             if (element.startsWith(startString)) {
