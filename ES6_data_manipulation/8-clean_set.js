@@ -2,11 +2,9 @@ export default function cleanSet(set, startString) {
     if (!startString) {
         return '';
     }
-    elif (typeof startString !== 'string') {
+    if (typeof startString !== 'string') {
         return '';
-    } 
-    
-    else {
+    } else {
         let result = '';
         for (let element of set) {
             if (element.startsWith(startString)) {
